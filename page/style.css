@@ -1,0 +1,67 @@
+:root {
+    --frame_dark: black;
+    --page_dark: grey;
+    --image_dark: black;
+    --image_text_dark: white;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.page {
+    position: relative;
+    background: var(--page_dark);
+    width: 100vw;
+    height: 100vh;
+    border: 10px solid var(--frame_dark)
+}
+
+div.image {
+    position: absolute;
+    background: var(--image_dark);
+    color:  var(--image_text_dark);
+    width: 40%;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+}
+
+div.wrappernav {
+    position: absolute;
+    width: 60%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+div.nav {
+    position: absolute;
+    background: var(--image_dark);
+    color:  var(--image_text_dark);
+    width: 10%;
+    top: 5px;
+    bottom: 5px;
+    right: 10px;
+}
+
+div.wrappertext {
+    position: absolute;
+    width: 90%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+div.text {
+    position: absolute;
+    background: var(--image_dark);
+    color:  var(--image_text_dark);
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 15px;
+}

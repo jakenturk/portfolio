@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 div.page {
@@ -64,4 +65,38 @@ div.text {
     bottom: 5px;
     left: 5px;
     right: 15px;
+}
+
+img {
+    height: 300px;
+    width: 450px;
+}
+
+div .animated {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    color: pink;
+    animation-name: tuto;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-duration: 20s;
+    animation-delay: -5s;
+    animation-iteration-count: infinite;
+    /* animation: position 5s linear infinite reverse; */
+}
+
+
+@keyframes position {
+    from {top: -100%}
+    100% {top: 100%}
+}
+
+@keyframes tuto {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(100%);
+    }
 }

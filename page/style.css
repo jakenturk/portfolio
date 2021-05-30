@@ -1,8 +1,8 @@
 :root {
-    --frame_dark: black;
-    --page_dark: grey;
+    --frame_dark: #393e46;
+    --page_dark: #222831;
     --image_dark: black;
-    --image_text_dark: white;
+    --image_text_dark: #b9d0f1;
 }
 
 ::-webkit-scrollbar { 
@@ -28,9 +28,9 @@ div.page {
 
 div.image {
     position: absolute;
-    background: var(--image_dark);
+    /* background: var(--image_dark); */
     color:  var(--image_text_dark);
-    width: 40%;
+    width: 29%;
     top: 5px;
     bottom: 5px;
     right: 5px;
@@ -94,21 +94,96 @@ div.text {
 img {
     height: 300px;
     width: 450px;
+    border: 5px solid var(--image_text_dark);
+}
+
+.relative_container {
+    position: relative;
+}
+
+.relative_container h1 {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    font-size: 5rem;
+    color: var(--image_text_dark);
 }
 
 div .animated {
     position: absolute;
     top: 5px;
-    left: 50%;
+    right: 5px;
     color: pink;
     animation-name: tuto;
     animation-timing-function: linear;
     animation-direction: reverse;
-    animation-duration: 20s;
-    animation-delay: -5s;
+    animation-duration: 40s;
+    animation-delay: -10s;
     animation-iteration-count: infinite;
     /* animation: position 5s linear infinite reverse; */
 }
+div .animated2 {
+    position: absolute;
+    top: -836px;
+    right: 5px;
+    color: pink;
+    animation-name: tuto2;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-duration: 40s;
+    /* animation-delay: 19.2s; */
+    animation-iteration-count: infinite;
+    /* animation: position 5s linear infinite reverse; */
+}
+/* I Put here Some New Css Design */
+.hide {
+    display: none;
+}
+
+.navbar {
+    position: relative;
+    top: 0;
+    left: 67%;
+    /* transform: translateX(223%); */
+    height: 100%;
+    width: 62px;
+    /* border-left: 1px solid black; */
+    background: linear-gradient(0deg, rgba(0,0,0,0) 13%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 91%);
+    color: white;
+    padding: 11px;
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    font-size: 2.5rem;
+    color: var(--image_text_dark);
+}
+
+.welcome_text  h1{
+    color: var(--image_text_dark);
+    font-size: 7rem;
+}
+
+.welcome_text {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+
+.group {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--image_text_dark);
+}
+
+.group a {
+    color: var(--image_text_dark);
+    text-decoration: none;
+    margin-right: 30px;
+}
+
 
 
 @keyframes position {
@@ -117,6 +192,14 @@ div .animated {
 }
 
 @keyframes tuto {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+@keyframes tuto2 {
     from {
         transform: translateY(-100%);
     }

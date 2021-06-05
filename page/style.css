@@ -30,7 +30,7 @@ div.image {
     position: absolute;
     /* background: var(--image_dark); */
     color:  var(--image_text_dark);
-    width: 29%;
+
     top: 5px;
     bottom: 5px;
     right: 5px;
@@ -38,7 +38,7 @@ div.image {
 
 div.wrappernav {
     position: absolute;
-    width: 60%;
+    width: 80%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -48,7 +48,7 @@ div.nav {
     position: absolute;
     background: var(--image_dark);
     color:  var(--image_text_dark);
-    width: 10%;
+    width: 5%;
     top: 5px;
     bottom: 5px;
     right: 10px;
@@ -56,7 +56,7 @@ div.nav {
 
 div.wrappertext {
     position: absolute;
-    width: 90%;
+    width: 95%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -112,7 +112,7 @@ img {
 div .animated {
     position: absolute;
     top: 5px;
-    right: 5px;
+
     color: pink;
     animation-name: tuto;
     animation-timing-function: linear;
